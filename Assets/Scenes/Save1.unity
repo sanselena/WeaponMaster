@@ -124,40 +124,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6207093654417853838, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
   m_PrefabInstance: {fileID: 766475809}
   m_PrefabAsset: {fileID: 0}
---- !u!183 &22239535
-Cloth:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22239533}
-  m_Enabled: 1
-  m_StretchingStiffness: 0.2
-  m_BendingStiffness: 0.1
-  m_UseTethers: 1
-  m_UseGravity: 1
-  m_Damping: 0.2
-  m_ExternalAcceleration: {x: 0, y: -10, z: 0}
-  m_RandomAcceleration: {x: 0, y: 0, z: 0}
-  m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
-  m_Friction: 0.5
-  m_CollisionMassScale: 0
-  m_UseContinuousCollision: 1
-  m_UseVirtualParticles: 1
-  m_SolverFrequency: 120
-  m_SleepThreshold: 0.1
-  m_Coefficients: []
-  m_CapsuleColliders: []
-  m_SphereColliders: []
-  m_SelfCollisionDistance: 0
-  m_SelfCollisionStiffness: 0.2
-  m_SelfAndInterCollisionIndices: 
-  m_VirtualParticleWeights:
-  - {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-  - {x: 0.6666667, y: 0.16666667, z: 0.16666667}
-  - {x: 0.5, y: 0.5, z: 0}
-  m_VirtualParticleIndices: 
 --- !u!137 &22239536
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -328,40 +294,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -8250731557370288973, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
   m_PrefabInstance: {fileID: 766475809}
   m_PrefabAsset: {fileID: 0}
---- !u!183 &291617746
-Cloth:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 291617744}
-  m_Enabled: 1
-  m_StretchingStiffness: 0.2
-  m_BendingStiffness: 0.3
-  m_UseTethers: 1
-  m_UseGravity: 1
-  m_Damping: 0.1
-  m_ExternalAcceleration: {x: 0, y: 0, z: 0}
-  m_RandomAcceleration: {x: 0, y: 0, z: 0}
-  m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
-  m_Friction: 0.5
-  m_CollisionMassScale: 0
-  m_UseContinuousCollision: 1
-  m_UseVirtualParticles: 1
-  m_SolverFrequency: 120
-  m_SleepThreshold: 0.1
-  m_Coefficients: []
-  m_CapsuleColliders: []
-  m_SphereColliders: []
-  m_SelfCollisionDistance: 0
-  m_SelfCollisionStiffness: 0.2
-  m_SelfAndInterCollisionIndices: 
-  m_VirtualParticleWeights:
-  - {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-  - {x: 0.6666667, y: 0.16666667, z: 0.16666667}
-  - {x: 0.5, y: 0.5, z: 0}
-  m_VirtualParticleIndices: 
 --- !u!137 &291617747
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -423,40 +355,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2893082648723897871, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
   m_PrefabInstance: {fileID: 766475809}
   m_PrefabAsset: {fileID: 0}
---- !u!183 &305021302
-Cloth:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 305021300}
-  m_Enabled: 1
-  m_StretchingStiffness: 0.2
-  m_BendingStiffness: 0.1
-  m_UseTethers: 1
-  m_UseGravity: 1
-  m_Damping: 0.2
-  m_ExternalAcceleration: {x: 0, y: -10, z: 0}
-  m_RandomAcceleration: {x: 0, y: 0, z: 0}
-  m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
-  m_Friction: 0.5
-  m_CollisionMassScale: 0
-  m_UseContinuousCollision: 1
-  m_UseVirtualParticles: 1
-  m_SolverFrequency: 120
-  m_SleepThreshold: 0.1
-  m_Coefficients: []
-  m_CapsuleColliders: []
-  m_SphereColliders: []
-  m_SelfCollisionDistance: 0
-  m_SelfCollisionStiffness: 0.2
-  m_SelfAndInterCollisionIndices: 
-  m_VirtualParticleWeights:
-  - {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-  - {x: 0.6666667, y: 0.16666667, z: 0.16666667}
-  - {x: 0.5, y: 0.5, z: 0}
-  m_VirtualParticleIndices: 
 --- !u!137 &305021303
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -518,40 +416,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5955819577695467925, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
   m_PrefabInstance: {fileID: 766475809}
   m_PrefabAsset: {fileID: 0}
---- !u!183 &339446128
-Cloth:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 339446126}
-  m_Enabled: 1
-  m_StretchingStiffness: 0.2
-  m_BendingStiffness: 0.3
-  m_UseTethers: 1
-  m_UseGravity: 1
-  m_Damping: 0.1
-  m_ExternalAcceleration: {x: 0, y: 0, z: 0}
-  m_RandomAcceleration: {x: 0, y: 0, z: 0}
-  m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
-  m_Friction: 0.5
-  m_CollisionMassScale: 0
-  m_UseContinuousCollision: 1
-  m_UseVirtualParticles: 1
-  m_SolverFrequency: 120
-  m_SleepThreshold: 0.1
-  m_Coefficients: []
-  m_CapsuleColliders: []
-  m_SphereColliders: []
-  m_SelfCollisionDistance: 0
-  m_SelfCollisionStiffness: 0.2
-  m_SelfAndInterCollisionIndices: 
-  m_VirtualParticleWeights:
-  - {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-  - {x: 0.6666667, y: 0.16666667, z: 0.16666667}
-  - {x: 0.5, y: 0.5, z: 0}
-  m_VirtualParticleIndices: 
 --- !u!137 &339446129
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -793,7 +657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a17959999c6294c85a35ffcf893fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 4
+  forwardSpeed: 0.5
   sideSpeed: 2
   trackWidth: 4
 --- !u!136 &438832282
@@ -901,7 +765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 14
   fireRate: 0.3
-  bulletPower: 1
+  bulletPower: 10
   bulletRange: 50
   autoShoot: 1
 --- !u!1 &480296684
@@ -1030,40 +894,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2142867723279835989, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
   m_PrefabInstance: {fileID: 766475809}
   m_PrefabAsset: {fileID: 0}
---- !u!183 &516675284
-Cloth:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516675282}
-  m_Enabled: 1
-  m_StretchingStiffness: 0.2
-  m_BendingStiffness: 0.1
-  m_UseTethers: 1
-  m_UseGravity: 1
-  m_Damping: 0.2
-  m_ExternalAcceleration: {x: 0, y: -10, z: 0}
-  m_RandomAcceleration: {x: 0, y: 0, z: 0}
-  m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
-  m_Friction: 0.5
-  m_CollisionMassScale: 0
-  m_UseContinuousCollision: 1
-  m_UseVirtualParticles: 1
-  m_SolverFrequency: 120
-  m_SleepThreshold: 0.1
-  m_Coefficients: []
-  m_CapsuleColliders: []
-  m_SphereColliders: []
-  m_SelfCollisionDistance: 0
-  m_SelfCollisionStiffness: 0.2
-  m_SelfAndInterCollisionIndices: 
-  m_VirtualParticleWeights:
-  - {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-  - {x: 0.6666667, y: 0.16666667, z: 0.16666667}
-  - {x: 0.5, y: 0.5, z: 0}
-  m_VirtualParticleIndices: 
 --- !u!137 &516675285
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -1125,40 +955,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7867733761331065123, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
   m_PrefabInstance: {fileID: 766475809}
   m_PrefabAsset: {fileID: 0}
---- !u!183 &535203910
-Cloth:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 535203908}
-  m_Enabled: 1
-  m_StretchingStiffness: 0.2
-  m_BendingStiffness: 0.1
-  m_UseTethers: 1
-  m_UseGravity: 1
-  m_Damping: 0.2
-  m_ExternalAcceleration: {x: 0, y: -10, z: 0}
-  m_RandomAcceleration: {x: 0, y: 0, z: 0}
-  m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
-  m_Friction: 0.5
-  m_CollisionMassScale: 0
-  m_UseContinuousCollision: 1
-  m_UseVirtualParticles: 1
-  m_SolverFrequency: 120
-  m_SleepThreshold: 0.1
-  m_Coefficients: []
-  m_CapsuleColliders: []
-  m_SphereColliders: []
-  m_SelfCollisionDistance: 0
-  m_SelfCollisionStiffness: 0.2
-  m_SelfAndInterCollisionIndices: 
-  m_VirtualParticleWeights:
-  - {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-  - {x: 0.6666667, y: 0.16666667, z: 0.16666667}
-  - {x: 0.5, y: 0.5, z: 0}
-  m_VirtualParticleIndices: 
 --- !u!137 &535203911
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -1220,40 +1016,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -8236282270156831719, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
   m_PrefabInstance: {fileID: 766475809}
   m_PrefabAsset: {fileID: 0}
---- !u!183 &710595303
-Cloth:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 710595301}
-  m_Enabled: 1
-  m_StretchingStiffness: 0.2
-  m_BendingStiffness: 0.1
-  m_UseTethers: 1
-  m_UseGravity: 1
-  m_Damping: 0.2
-  m_ExternalAcceleration: {x: 0, y: -10, z: 0}
-  m_RandomAcceleration: {x: 0, y: 0, z: 0}
-  m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
-  m_Friction: 0.5
-  m_CollisionMassScale: 0
-  m_UseContinuousCollision: 1
-  m_UseVirtualParticles: 1
-  m_SolverFrequency: 120
-  m_SleepThreshold: 0.1
-  m_Coefficients: []
-  m_CapsuleColliders: []
-  m_SphereColliders: []
-  m_SelfCollisionDistance: 0
-  m_SelfCollisionStiffness: 0.2
-  m_SelfAndInterCollisionIndices: 
-  m_VirtualParticleWeights:
-  - {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-  - {x: 0.6666667, y: 0.16666667, z: 0.16666667}
-  - {x: 0.5, y: 0.5, z: 0}
-  m_VirtualParticleIndices: 
 --- !u!137 &710595304
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -1441,7 +1203,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1977024451}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
       insertIndex: -1
@@ -1452,130 +1217,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1535238793}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1535238794}
     - targetCorrespondingSourceObject: {fileID: 5955819577695467925, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
       insertIndex: -1
       addedObject: {fileID: 339446129}
-    - targetCorrespondingSourceObject: {fileID: 5955819577695467925, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 339446128}
     - targetCorrespondingSourceObject: {fileID: -8250731557370288973, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
       insertIndex: -1
       addedObject: {fileID: 291617747}
-    - targetCorrespondingSourceObject: {fileID: -8250731557370288973, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 291617746}
     - targetCorrespondingSourceObject: {fileID: -6013220942872458649, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1670254250}
-    - targetCorrespondingSourceObject: {fileID: -6013220942872458649, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1670254249}
     - targetCorrespondingSourceObject: {fileID: 7513916915821731059, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1405431971}
-    - targetCorrespondingSourceObject: {fileID: 7513916915821731059, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1405431970}
     - targetCorrespondingSourceObject: {fileID: 7867733761331065123, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
       insertIndex: -1
       addedObject: {fileID: 535203911}
-    - targetCorrespondingSourceObject: {fileID: 7867733761331065123, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 535203910}
     - targetCorrespondingSourceObject: {fileID: 4749568799952371105, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1761161367}
-    - targetCorrespondingSourceObject: {fileID: 4749568799952371105, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1761161366}
     - targetCorrespondingSourceObject: {fileID: -8236282270156831719, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
       insertIndex: -1
       addedObject: {fileID: 710595304}
-    - targetCorrespondingSourceObject: {fileID: -8236282270156831719, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 710595303}
     - targetCorrespondingSourceObject: {fileID: 2232211611668370538, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1898092735}
-    - targetCorrespondingSourceObject: {fileID: 2232211611668370538, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1898092734}
     - targetCorrespondingSourceObject: {fileID: 2142867723279835989, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
       insertIndex: -1
       addedObject: {fileID: 516675285}
-    - targetCorrespondingSourceObject: {fileID: 2142867723279835989, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 516675284}
     - targetCorrespondingSourceObject: {fileID: 1953199728259443064, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2143559154}
-    - targetCorrespondingSourceObject: {fileID: 1953199728259443064, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2143559153}
     - targetCorrespondingSourceObject: {fileID: -5159809866700837274, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
       insertIndex: -1
       addedObject: {fileID: 894656026}
-    - targetCorrespondingSourceObject: {fileID: -5159809866700837274, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 894656025}
     - targetCorrespondingSourceObject: {fileID: 6207093654417853838, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
       insertIndex: -1
       addedObject: {fileID: 22239536}
-    - targetCorrespondingSourceObject: {fileID: 6207093654417853838, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 22239535}
     - targetCorrespondingSourceObject: {fileID: 2893082648723897871, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
       insertIndex: -1
       addedObject: {fileID: 305021303}
-    - targetCorrespondingSourceObject: {fileID: 2893082648723897871, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 305021302}
     - targetCorrespondingSourceObject: {fileID: 5166311474311082197, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1376846229}
-    - targetCorrespondingSourceObject: {fileID: 5166311474311082197, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1376846228}
   m_SourcePrefab: {fileID: 100100000, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
 --- !u!1 &894656023 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5159809866700837274, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
   m_PrefabInstance: {fileID: 766475809}
   m_PrefabAsset: {fileID: 0}
---- !u!183 &894656025
-Cloth:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894656023}
-  m_Enabled: 1
-  m_StretchingStiffness: 0.2
-  m_BendingStiffness: 0.1
-  m_UseTethers: 1
-  m_UseGravity: 1
-  m_Damping: 0.2
-  m_ExternalAcceleration: {x: 0, y: -10, z: 0}
-  m_RandomAcceleration: {x: 0, y: 0, z: 0}
-  m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
-  m_Friction: 0.5
-  m_CollisionMassScale: 0
-  m_UseContinuousCollision: 1
-  m_UseVirtualParticles: 1
-  m_SolverFrequency: 120
-  m_SleepThreshold: 0.1
-  m_Coefficients: []
-  m_CapsuleColliders: []
-  m_SphereColliders: []
-  m_SelfCollisionDistance: 0
-  m_SelfCollisionStiffness: 0.2
-  m_SelfAndInterCollisionIndices: 
-  m_VirtualParticleWeights:
-  - {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-  - {x: 0.6666667, y: 0.16666667, z: 0.16666667}
-  - {x: 0.5, y: 0.5, z: 0}
-  m_VirtualParticleIndices: 
 --- !u!137 &894656026
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -1808,40 +1500,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5166311474311082197, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
   m_PrefabInstance: {fileID: 766475809}
   m_PrefabAsset: {fileID: 0}
---- !u!183 &1376846228
-Cloth:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1376846226}
-  m_Enabled: 1
-  m_StretchingStiffness: 0.2
-  m_BendingStiffness: 0.1
-  m_UseTethers: 1
-  m_UseGravity: 1
-  m_Damping: 0.2
-  m_ExternalAcceleration: {x: 0, y: -10, z: 0}
-  m_RandomAcceleration: {x: 0, y: 0, z: 0}
-  m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
-  m_Friction: 0.5
-  m_CollisionMassScale: 0
-  m_UseContinuousCollision: 1
-  m_UseVirtualParticles: 1
-  m_SolverFrequency: 120
-  m_SleepThreshold: 0.1
-  m_Coefficients: []
-  m_CapsuleColliders: []
-  m_SphereColliders: []
-  m_SelfCollisionDistance: 0
-  m_SelfCollisionStiffness: 0.2
-  m_SelfAndInterCollisionIndices: 
-  m_VirtualParticleWeights:
-  - {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-  - {x: 0.6666667, y: 0.16666667, z: 0.16666667}
-  - {x: 0.5, y: 0.5, z: 0}
-  m_VirtualParticleIndices: 
 --- !u!137 &1376846229
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -1903,40 +1561,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7513916915821731059, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
   m_PrefabInstance: {fileID: 766475809}
   m_PrefabAsset: {fileID: 0}
---- !u!183 &1405431970
-Cloth:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1405431968}
-  m_Enabled: 1
-  m_StretchingStiffness: 0.2
-  m_BendingStiffness: 0.1
-  m_UseTethers: 1
-  m_UseGravity: 1
-  m_Damping: 0.2
-  m_ExternalAcceleration: {x: 0, y: -10, z: 0}
-  m_RandomAcceleration: {x: 0, y: 0, z: 0}
-  m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
-  m_Friction: 0.5
-  m_CollisionMassScale: 0
-  m_UseContinuousCollision: 1
-  m_UseVirtualParticles: 1
-  m_SolverFrequency: 120
-  m_SleepThreshold: 0.1
-  m_Coefficients: []
-  m_CapsuleColliders: []
-  m_SphereColliders: []
-  m_SelfCollisionDistance: 0
-  m_SelfCollisionStiffness: 0.2
-  m_SelfAndInterCollisionIndices: 
-  m_VirtualParticleWeights:
-  - {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-  - {x: 0.6666667, y: 0.16666667, z: 0.16666667}
-  - {x: 0.5, y: 0.5, z: 0}
-  m_VirtualParticleIndices: 
 --- !u!137 &1405431971
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -2055,6 +1679,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
   m_PrefabInstance: {fileID: 766475809}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1535238790 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
+  m_PrefabInstance: {fileID: 766475809}
+  m_PrefabAsset: {fileID: 0}
 --- !u!111 &1535238791
 Animation:
   m_ObjectHideFlags: 0
@@ -2105,10 +1734,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2797f6d0d2de59649aa9130c6ba7eedd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 100
-  healthBarPrefab: {fileID: 0}
-  healthBarOffset: {x: 0, y: 2.5, z: 0}
+  maxHealth: 10000
+  healthBarObject: {fileID: 1977024450}
+  healthBarSlider: {fileID: 1784955876}
+  healthBarOffset: {x: 0, y: 2, z: 0}
+  healthBarScale: {x: 0.01, y: 0.01, z: 0.01}
+--- !u!136 &1535238794
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535238789}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.00272155
+  m_Height: 0.017379135
+  m_Direction: 1
+  m_Center: {x: -0.00022727465, y: 0.007105491, z: -0.00026938366}
 --- !u!1 &1595201940
 GameObject:
   m_ObjectHideFlags: 0
@@ -2280,40 +1933,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -6013220942872458649, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
   m_PrefabInstance: {fileID: 766475809}
   m_PrefabAsset: {fileID: 0}
---- !u!183 &1670254249
-Cloth:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670254247}
-  m_Enabled: 1
-  m_StretchingStiffness: 0.2
-  m_BendingStiffness: 0.1
-  m_UseTethers: 1
-  m_UseGravity: 1
-  m_Damping: 0.2
-  m_ExternalAcceleration: {x: 0, y: -10, z: 0}
-  m_RandomAcceleration: {x: 0, y: 0, z: 0}
-  m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
-  m_Friction: 0.5
-  m_CollisionMassScale: 0
-  m_UseContinuousCollision: 1
-  m_UseVirtualParticles: 1
-  m_SolverFrequency: 120
-  m_SleepThreshold: 0.1
-  m_Coefficients: []
-  m_CapsuleColliders: []
-  m_SphereColliders: []
-  m_SelfCollisionDistance: 0
-  m_SelfCollisionStiffness: 0.2
-  m_SelfAndInterCollisionIndices: 
-  m_VirtualParticleWeights:
-  - {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-  - {x: 0.6666667, y: 0.16666667, z: 0.16666667}
-  - {x: 0.5, y: 0.5, z: 0}
-  m_VirtualParticleIndices: 
 --- !u!137 &1670254250
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -2370,6 +1989,147 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_DirtyAABB: 0
+--- !u!1001 &1670469056
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1535238790}
+    m_Modifications:
+    - target: {fileID: 1336897746585718029, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684484191109817810, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684484191109817810, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.19999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.19999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.19999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.008044741
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.00081768166
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00000000146674
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335397762111322848, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_Name
+      value: HealthBarCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 9057073741468196217, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 9057073741468196217, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 9057073741468196217, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 9057073741468196217, guid: b058392187f240242b0dde44029b3470, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b058392187f240242b0dde44029b3470, type: 3}
 --- !u!1001 &1718847786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2489,40 +2249,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4749568799952371105, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
   m_PrefabInstance: {fileID: 766475809}
   m_PrefabAsset: {fileID: 0}
---- !u!183 &1761161366
-Cloth:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761161364}
-  m_Enabled: 1
-  m_StretchingStiffness: 0.2
-  m_BendingStiffness: 0.1
-  m_UseTethers: 1
-  m_UseGravity: 1
-  m_Damping: 0.2
-  m_ExternalAcceleration: {x: 0, y: -10, z: 0}
-  m_RandomAcceleration: {x: 0, y: 0, z: 0}
-  m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
-  m_Friction: 0.5
-  m_CollisionMassScale: 0
-  m_UseContinuousCollision: 1
-  m_UseVirtualParticles: 1
-  m_SolverFrequency: 120
-  m_SleepThreshold: 0.1
-  m_Coefficients: []
-  m_CapsuleColliders: []
-  m_SphereColliders: []
-  m_SelfCollisionDistance: 0
-  m_SelfCollisionStiffness: 0.2
-  m_SelfAndInterCollisionIndices: 
-  m_VirtualParticleWeights:
-  - {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-  - {x: 0.6666667, y: 0.16666667, z: 0.16666667}
-  - {x: 0.5, y: 0.5, z: 0}
-  m_VirtualParticleIndices: 
 --- !u!137 &1761161367
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -2579,45 +2305,22 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_DirtyAABB: 0
+--- !u!114 &1784955876 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8410793816005473303, guid: b058392187f240242b0dde44029b3470, type: 3}
+  m_PrefabInstance: {fileID: 1670469056}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1898092732 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2232211611668370538, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
   m_PrefabInstance: {fileID: 766475809}
   m_PrefabAsset: {fileID: 0}
---- !u!183 &1898092734
-Cloth:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898092732}
-  m_Enabled: 1
-  m_StretchingStiffness: 0.2
-  m_BendingStiffness: 0.1
-  m_UseTethers: 1
-  m_UseGravity: 1
-  m_Damping: 0.2
-  m_ExternalAcceleration: {x: 0, y: -10, z: 0}
-  m_RandomAcceleration: {x: 0, y: 0, z: 0}
-  m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
-  m_Friction: 0.5
-  m_CollisionMassScale: 0
-  m_UseContinuousCollision: 1
-  m_UseVirtualParticles: 1
-  m_SolverFrequency: 120
-  m_SleepThreshold: 0.1
-  m_Coefficients: []
-  m_CapsuleColliders: []
-  m_SphereColliders: []
-  m_SelfCollisionDistance: 0
-  m_SelfCollisionStiffness: 0.2
-  m_SelfAndInterCollisionIndices: 
-  m_VirtualParticleWeights:
-  - {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-  - {x: 0.6666667, y: 0.16666667, z: 0.16666667}
-  - {x: 0.5, y: 0.5, z: 0}
-  m_VirtualParticleIndices: 
 --- !u!137 &1898092735
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -2674,6 +2377,16 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_DirtyAABB: 0
+--- !u!1 &1977024450 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7335397762111322848, guid: b058392187f240242b0dde44029b3470, type: 3}
+  m_PrefabInstance: {fileID: 1670469056}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1977024451 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7059943502314485807, guid: b058392187f240242b0dde44029b3470, type: 3}
+  m_PrefabInstance: {fileID: 1670469056}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2114087146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2736,40 +2449,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1953199728259443064, guid: ead6fd4cf9e2a0d40acba59366163b49, type: 3}
   m_PrefabInstance: {fileID: 766475809}
   m_PrefabAsset: {fileID: 0}
---- !u!183 &2143559153
-Cloth:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2143559151}
-  m_Enabled: 1
-  m_StretchingStiffness: 0.2
-  m_BendingStiffness: 0.1
-  m_UseTethers: 1
-  m_UseGravity: 1
-  m_Damping: 0.2
-  m_ExternalAcceleration: {x: 0, y: -10, z: 0}
-  m_RandomAcceleration: {x: 0, y: 0, z: 0}
-  m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
-  m_Friction: 0.5
-  m_CollisionMassScale: 0
-  m_UseContinuousCollision: 1
-  m_UseVirtualParticles: 1
-  m_SolverFrequency: 120
-  m_SleepThreshold: 0.1
-  m_Coefficients: []
-  m_CapsuleColliders: []
-  m_SphereColliders: []
-  m_SelfCollisionDistance: 0
-  m_SelfCollisionStiffness: 0.2
-  m_SelfAndInterCollisionIndices: 
-  m_VirtualParticleWeights:
-  - {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-  - {x: 0.6666667, y: 0.16666667, z: 0.16666667}
-  - {x: 0.5, y: 0.5, z: 0}
-  m_VirtualParticleIndices: 
 --- !u!137 &2143559154
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0

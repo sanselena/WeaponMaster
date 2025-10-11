@@ -51,11 +51,17 @@ public class GunShooting : MonoBehaviour
         Rigidbody rb = bullet.AddComponent<Rigidbody>();
         rb.useGravity = false; // No gravity = no recoil/falling
         rb.linearVelocity = firePoint.forward * bulletSpeed;
-        
+
+        // Set collider as trigger
+        Collider col = bullet.GetComponent<Collider>();
+        if (col != null) col.isTrigger = true;
+
         // Add bullet script and set properties
         Bullet bulletScript = bullet.AddComponent<Bullet>();
         bulletScript.SetBulletProperties(bulletPower, bulletRange);
-        
-        Debug.Log($"Bullet fired! Speed: {bulletSpeed}, Power: {bulletPower}, Range: {bulletRange}");
+
+
+
+        //Debug.Log($"Bullet fired! Speed: {bulletSpeed}, Power: {bulletPower}, Range: {bulletRange}");
     }
 }

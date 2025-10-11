@@ -20,7 +20,7 @@ public class Obstacle : MonoBehaviour
         // Set tag for identification
         gameObject.tag = "Obstacle";
         
-        Debug.Log($"Obstacle '{gameObject.name}' set up with trigger collider");
+        //Debug.Log($"Obstacle '{gameObject.name}' set up with trigger collider");
     }
     
     public void GetShot()
