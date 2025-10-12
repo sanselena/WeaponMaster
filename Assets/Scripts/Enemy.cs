@@ -24,6 +24,13 @@ public class Enemy : MonoBehaviour
         // Set up trigger collider
         SetupCollider();
 
+        // Get or add health bar component
+        healthBar = GetComponent<EnemyHealthBar>();
+        if (healthBar == null)
+        {
+            healthBar = gameObject.AddComponent<EnemyHealthBar>();
+        }
+
         Debug.Log($"Enemy '{gameObject.name}' ready with {maxHealth} health");
     }
 
@@ -69,6 +76,13 @@ public class Enemy : MonoBehaviour
         currentHealth -= damage;
         Debug.Log($"Enemy took {damage} damage. Health: {currentHealth}/{maxHealth}");
 
+        // Show health bar on first damage
+        if (healthBar != null)
+        {
+            healthBar.Show();
+            healthBar.UpdateHealth();
+        }
+
         // Check if dead
         if (currentHealth <= 0)
         {
@@ -92,6 +106,12 @@ public class Enemy : MonoBehaviour
 
         isDead = true;
         Debug.Log($"Enemy '{gameObject.name}' died!");
+
+        // Hide health bar
+        if (healthBar != null)
+        {
+            healthBar.Hide();
+        }
 
         // Fall and destroy
         StartCoroutine(FallDown());
