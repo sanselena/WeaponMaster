@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff58051fc70bc9541ac596e43dac10ec, type: 3}
+  m_Name: Apple
+  m_EditorClassIdentifier: 
+  partId: 1
+  displayName: Apple
+  tier: 1
+  worldPrefab: {fileID: 1706836992993036850, guid: a95179ebc0e4f6145b85a33dae75933b, type: 3}
+  uiRotation: {x: -10, y: -5, z: -17}
+  uiScale: 55
+  attachmentScale: 0.2045
+  attachmentRotation: {x: 0, y: 0, z: 0}
+  attachmentYOffset: 0
+  statBonus: 5

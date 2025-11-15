@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour
             healthBar = gameObject.AddComponent<EnemyHealthBar>();
         }
 
-        Debug.Log($"Enemy '{gameObject.name}' ready with {maxHealth} health");
+        // Debug.Log($"Enemy '{gameObject.name}' ready with {maxHealth} health");
     }
 
     void SetupCollider()
@@ -47,7 +47,7 @@ public class Enemy : MonoBehaviour
                 hasTrigger = true;
                 col.gameObject.tag = "Enemy";
                 colliderTransform = col.transform;
-                Debug.Log($"Using existing trigger collider on '{col.gameObject.name}'");
+                // Debug.Log($"Using existing trigger collider on '{col.gameObject.name}'");
                 break;
             }
         }
@@ -65,7 +65,7 @@ public class Enemy : MonoBehaviour
             trigger.radius = 1.5f;
 
             colliderTransform = triggerObj.transform;
-            Debug.Log("Created new trigger collider");
+            // Debug.Log("Created new trigger collider");
         }
     }
 
@@ -74,7 +74,7 @@ public class Enemy : MonoBehaviour
         if (isDead) return;
 
         currentHealth -= damage;
-        Debug.Log($"Enemy took {damage} damage. Health: {currentHealth}/{maxHealth}");
+        // Debug.Log($"Enemy took {damage} damage. Health: {currentHealth}/{maxHealth}");
 
         // Show health bar on first damage
         if (healthBar != null)
@@ -105,7 +105,7 @@ public class Enemy : MonoBehaviour
         if (isDead) return;
 
         isDead = true;
-        Debug.Log($"Enemy '{gameObject.name}' died!");
+        // Debug.Log($"Enemy '{gameObject.name}' died!");
 
         // Hide health bar
         if (healthBar != null)

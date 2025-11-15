@@ -7,13 +7,19 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: Assets/Scenes/Scene0.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    guid: 1a4c532df3590d346be9f2dfa31a3879
   - enabled: 1
     path: Assets/Scenes/Scene0.unity
     guid: 1a4c532df3590d346be9f2dfa31a3879
   - enabled: 1
     path: Assets/Scenes/Scene1.unity
-    guid: e2ac064b55401a0428ab6798fbf65017
+    guid: 413062c694e3a5f40a25fc0c77dce8f0
+  - enabled: 1
+    path: Assets/Scenes/Scene2.unity
+    guid: 1952c3d4fc230da41bb41386bd6f180a
+  - enabled: 1
+    path: Assets/Scenes/weaponMerge.unity
+    guid: f6f227da2afe28942bc0e97908bbf74a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

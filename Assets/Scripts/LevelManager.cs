@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class LevelManager : MonoBehaviour
 {
     public GameObject gun;           // Assign your Gun object in the Inspector
-    public float targetZ = 100f;     // The Z position to complete the level, since Gun is always going in one direction, a limit will decide when it should skip to the next level! 
+    public float targetZ = 2000f;     // The Z position to complete the level, since Gun is always going in one direction, a limit will decide when it should skip to the next level! 
+    // IMPORTANT: change this value from "LevelIndexCanvas" component directly!!!! 
     public TextMeshProUGUI levelText;           // Assign a UI Text element in the Inspector
 
     private int currentLevelIndex;
+    private bool levelLoading = false; // Seviye yüklemesinin birden çok kez tetiklenmesini önler
 
     void Start()
     {
@@ -20,20 +22,36 @@ public class LevelManager : MonoBehaviour
 
     void Update()
     {
-        if (gun != null && gun.transform.position.z >= targetZ)
+        // Seviye zaten yükleniyorsa tekrar kontrol etme
+        if (levelLoading) return;
+
+        // Seviye tamamlama koþullarý:
+        // 1. Silah hedef Z pozisyonuna ulaþtýysa VEYA
+        // 2. Hediye kutusu toplandýysa
+        if ((gun != null && gun.transform.position.z >= targetZ) || PresentBoxPickup.isCollected)
         {
+            levelLoading = true; // Yüklemeyi baþlat ve bayraðý ayarla
             LoadNextLevel();
         }
     }
 
     void LoadNextLevel()
     {
-        int nextLevelIndex = currentLevelIndex + 1;
-        if (nextLevelIndex < SceneManager.sceneCountInBuildSettings)
+        // Sonraki seviyeye geçmeden önce mevcut seviyenin buildIndex'ini kaydet.
+        if (GameStateManager.Instance != null)
         {
-            SceneManager.LoadScene(nextLevelIndex);
+            int completedLevelIndex = SceneManager.GetActiveScene().buildIndex;
+            Debug.Log($"[LevelManager] Seviye tamamlandý. Kaydedilen buildIndex: {completedLevelIndex}");
+            GameStateManager.Instance.LastCompletedLevelIndex = completedLevelIndex;
         }
-        // If last level, you may want to repeat, show a message, etc.?????
+        else
+        {
+            Debug.LogError("[LevelManager] GameStateManager örneði bulunamadý! Seviye indeksi kaydedilemedi.");
+        }
+
+        // Instead of loading next level, go to weapon merge scene
+        // The merge scene will handle returning to the game
+        SceneManager.LoadScene("weaponMerge");
     }
 
     void UpdateLevelUI()
