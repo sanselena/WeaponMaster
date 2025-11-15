@@ -2,6 +2,13 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+[System.Serializable]
+public class MergeSfx
+{
+    public WeaponPartId resultPartId;
+    public AudioClip sfxClip;
+}
+
 public class WeaponPartGridManager : MonoBehaviour
 {
     [Header("Grid Settings")]
@@ -13,8 +20,14 @@ public class WeaponPartGridManager : MonoBehaviour
     [Header("Part Definitions")]
     public WeaponPartDefinition[] partDefinitions;
 
+    [Header("Audio Settings")]
+    public AudioSource sfxAudioSource; // SFX çalmak için kullanýlacak AudioSource
+    public MergeSfx[] mergeSfxs; // Baþarýlý birleþtirmeler için ses efektleri
+    public AudioClip invalidMergeSfx; // Geçersiz birleþtirme denemeleri için ses efekti
+
     private List<WeaponPartSlot> slots = new List<WeaponPartSlot>();
     private Dictionary<WeaponPartId, WeaponPartDefinition> partDefMap;
+    private Dictionary<WeaponPartId, AudioClip> mergeSfxMap;
 
     void Awake()
     {
@@ -24,6 +37,16 @@ public class WeaponPartGridManager : MonoBehaviour
             if (def != null && !partDefMap.ContainsKey(def.partId))
             {
                 partDefMap[def.partId] = def;
+            }
+        }
+
+        // SFX'leri daha hýzlý eriþim için bir Dictionary'e yükle
+        mergeSfxMap = new Dictionary<WeaponPartId, AudioClip>();
+        foreach (var sfx in mergeSfxs)
+        {
+            if (sfx.sfxClip != null && !mergeSfxMap.ContainsKey(sfx.resultPartId))
+            {
+                mergeSfxMap[sfx.resultPartId] = sfx.sfxClip;
             }
         }
     }
@@ -110,11 +133,31 @@ public class WeaponPartGridManager : MonoBehaviour
             inventory.RemovePart(part1);
             inventory.RemovePart(part2);
             inventory.AddPart(resultPart);
+
+            // Baþarýlý birleþtirme sesini çal
+            PlayMergeSfx(resultPart);
         }
         else
         {
             Debug.Log($"HandleDropMerge: Cannot merge {part1} and {part2}.");
             sourceSlot.SetModelVisibility(true);
+
+            // Geçersiz birleþtirme sesini çal
+            if (sfxAudioSource != null && invalidMergeSfx != null)
+            {
+                sfxAudioSource.PlayOneShot(invalidMergeSfx);
+            }
+        }
+    }
+
+    private void PlayMergeSfx(WeaponPartId resultPartId)
+    {
+        if (sfxAudioSource != null && mergeSfxMap.TryGetValue(resultPartId, out AudioClip clip))
+        {
+            if (clip != null)
+            {
+                sfxAudioSource.PlayOneShot(clip);
+            }
         }
     }
 

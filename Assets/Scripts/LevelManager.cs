@@ -25,10 +25,8 @@ public class LevelManager : MonoBehaviour
         // Seviye zaten yükleniyorsa tekrar kontrol etme
         if (levelLoading) return;
 
-        // Seviye tamamlama koþullarý:
-        // 1. Silah hedef Z pozisyonuna ulaþtýysa VEYA
-        // 2. Hediye kutusu toplandýysa
-        if ((gun != null && gun.transform.position.z >= targetZ) || PresentBoxPickup.isCollected)
+        // Seviye tamamlama koþulu: Sadece silah hedef Z pozisyonuna ulaþtýysa
+        if (gun != null && gun.transform.position.z >= targetZ)
         {
             levelLoading = true; // Yüklemeyi baþlat ve bayraðý ayarla
             LoadNextLevel();
@@ -41,7 +39,7 @@ public class LevelManager : MonoBehaviour
         if (GameStateManager.Instance != null)
         {
             int completedLevelIndex = SceneManager.GetActiveScene().buildIndex;
-            Debug.Log($"[LevelManager] Seviye tamamlandý. Kaydedilen buildIndex: {completedLevelIndex}");
+            Debug.Log($"[LevelManager] Seviye tamamlandý (Mesafe). Kaydedilen buildIndex: {completedLevelIndex}");
             GameStateManager.Instance.LastCompletedLevelIndex = completedLevelIndex;
         }
         else
