@@ -1,7 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewWeaponPart", menuName = "WeaponMaster/Weapon Part Definition")]
-public class WeaponPartDefinition : ScriptableObject
+[CreateAssetMenu(fileName = "New Weapon Part", menuName = "Weapon/Weapon Part Definition")]
+public class WeaponPartDefinition: ScriptableObject
 {
     [Header("Part Identity")]
     public WeaponPartId partId;
@@ -12,17 +12,17 @@ public class WeaponPartDefinition : ScriptableObject
     public GameObject worldPrefab;
 
     [Header("UI Display Settings")]
-    public Vector3 uiRotation = new Vector3(0, 0, 0); // Her parçanýn UI'daki rotasyonu
-    public float uiScale = 1.0f;                      // Her parçanýn UI'daki ölçeði
+    public Vector3 uiRotation;
+    public float uiScale = 1.0f;
 
     [Header("Attachment Settings")]
-    public float attachmentScale = 1f; 
-    public Vector3 attachmentRotation = Vector3.zero;
-    public float attachmentYOffset = 0f; // YENÝ: Silaha takýldýðýndaki dikey pozisyonu
+    public float attachmentScale = 1.0f;
+    public Vector3 attachmentRotation;
+    public float attachmentYOffset;
 
     [Header("Stats")]
-    public float statBonus = 5f;
-    
+        public float statBonus = 0f;
+
     public float GetTotalBonus()
     {
         return statBonus * tier;

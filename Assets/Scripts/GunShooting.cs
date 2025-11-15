@@ -5,83 +5,121 @@ public class GunShooting : MonoBehaviour
 {
     [Header("Bullet Settings")]
     public float bulletSpeed = 20f;
-    public float fireRate = 0.3f; // Time between shots (lower = faster shoot)
-    public float bulletPower = 1f; // Future use for damage/power?
-    public float bulletRange = 50f; // How far bullets travel before destroying
+    public float fireRate = 0.3f;
+    public float bulletPower = 1f;
+    public float bulletRange = 50f;
     
     [Header("Auto Shooting")]
-    public bool autoShoot = true; // Start shooting automatically
+    public bool autoShoot = true;
 
     [Header("Visuals")]
-    public Material bulletMat; // Painting hearts on the bullets <3
+    public Material bulletMat;
 
     [Header("Audio")]
     public AudioClip bulletSFX;
     public AudioSource bulletSFXSource;
     public TeleportingButton bulletMuted;
 
-
     private Transform firePoint;
     private float nextFireTime = 0f;
     
+    private float baseFireRate;
+    private float baseBulletPower;
+    private float baseBulletRange;
+    
+    void Awake()
+    {
+        baseFireRate = fireRate;
+        baseBulletPower = bulletPower;
+        baseBulletRange = bulletRange;
+    }
+
     void Start()
     {
-        // Create fire point if it doesn't exist
+        // --- GunStats'tan taþýnan mantýk ---
+        if (WeaponPartInventory.Instance != null)
+        {
+            WeaponPartInventory.Instance.OnEquippedHatChanged += UpdateStatsFromInventory;
+            UpdateStatsFromInventory(WeaponPartInventory.Instance.GetEquippedHat());
+        }
+        // ------------------------------------
+
         if (firePoint == null)
         {
             GameObject firePointObj = new GameObject("FirePoint");
             firePointObj.transform.SetParent(transform);
-            firePointObj.transform.localPosition = new Vector3(0, 0, 1); // In front of gun
+            firePointObj.transform.localPosition = new Vector3(0, 0, 1);
             firePoint = firePointObj.transform;
         }
 
         bulletSFXSource = gameObject.AddComponent<AudioSource>();
-        bulletSFXSource.playOnAwake = false; // For some reason this doesn't work in Start...
-
-
+        bulletSFXSource.playOnAwake = false;
+        
         Debug.Log("Gun shooting system ready! Auto-shooting enabled.");
+    }
+
+    void OnDestroy()
+    {
+        // --- GunStats'tan taþýnan mantýk ---
+        if (WeaponPartInventory.Instance != null)
+        {
+            WeaponPartInventory.Instance.OnEquippedHatChanged -= UpdateStatsFromInventory;
+        }
+        // ------------------------------------
+    }
+
+    // --- GunStats'tan taþýnan metot ---
+    private void UpdateStatsFromInventory(WeaponPartId equippedPartId)
+    {
+        float bonus = 0;
+        if (WeaponPartInventory.Instance != null)
+        {
+            bonus = WeaponPartInventory.Instance.GetEquippedPartBonus();
+        }
+        ApplyBonus(bonus);
+    }
+    // ------------------------------------
+
+    public void ApplyBonus(float bonus)
+    {
+        float bonusMultiplier = 1.0f + (bonus / 100.0f);
+        fireRate = baseFireRate / bonusMultiplier;
+        bulletPower = baseBulletPower * bonusMultiplier;
+        bulletRange = baseBulletRange * bonusMultiplier;
+        Debug.Log($"Bonus Applied: {bonus}%. New Stats -> FireRate: {fireRate}, Power: {bulletPower}, Range: {bulletRange}");
     }
     
     void Update()
     {
-        // Automatic shooting only
         if (autoShoot && Time.time >= nextFireTime)
         {
             Shoot();
             nextFireTime = Time.time + fireRate;
         }
-        bulletSFXSource.playOnAwake = false; // OR here.. about bullets' creation maybe?
+        bulletSFXSource.playOnAwake = false;
     }
     
     void Shoot()
     {
-        // Create simple bullet (small sphere)
         GameObject bullet = GameObject.CreatePrimitive(PrimitiveType.Sphere);   
         bullet.name = "Bullet";
         bullet.transform.position = firePoint.position;
-        bullet.transform.localScale = Vector3.one * 0.2f; // smol bullet
+        bullet.transform.localScale = Vector3.one * 0.2f;
 
         Renderer bulletRenderer = bullet.GetComponent<Renderer>();
         bulletRenderer.material = bulletMat; 
 
-
-        // Add rigidbody with no gravity (no recoil/falling)
         Rigidbody rb = bullet.AddComponent<Rigidbody>();
         rb.useGravity = false;
         rb.linearVelocity = firePoint.forward * bulletSpeed;
 
-        // Set collider as trigger
         Collider col = bullet.GetComponent<Collider>();
         if (col != null) col.isTrigger = true;
 
-        // Add bullet script and set properties
         Bullet bulletScript = bullet.AddComponent<Bullet>();
         bulletScript.SetBulletProperties(bulletPower, bulletRange);
 
-        // Add annoying Pew Pew Pew
         if (bulletSFX != null)
             bulletSFXSource.PlayOneShot(bulletSFX);
-
-        //Debug.Log($"Bullet fired! Speed: {bulletSpeed}, Power: {bulletPower}, Range: {bulletRange}");
     }
 }
