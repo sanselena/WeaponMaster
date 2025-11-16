@@ -4900,6 +4900,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gun
       objectReference: {fileID: 0}
+    - target: {fileID: 5113473821517950084, guid: 6c31a6dcf6343584e81ed813cfe8306d, type: 3}
+      propertyPath: baseModelPrefab
+      value: 
+      objectReference: {fileID: 7424552614477237255, guid: 8ff467852add5964287ff7ccd66b61b0, type: 3}
+    - target: {fileID: 5113473821517950084, guid: 6c31a6dcf6343584e81ed813cfe8306d, type: 3}
+      propertyPath: evolvedModelPrefab
+      value: 
+      objectReference: {fileID: 2456743409273521474, guid: 1a46f77898474674bafed0aa7291db38, type: 3}
+    - target: {fileID: 8699709126270067623, guid: 6c31a6dcf6343584e81ed813cfe8306d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

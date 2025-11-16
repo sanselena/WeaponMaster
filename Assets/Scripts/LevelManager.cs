@@ -15,27 +15,30 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        // Get active scene index
         currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
         UpdateLevelUI();
     }
 
     void Update()
     {
-        // Seviye zaten yükleniyorsa tekrar kontrol etme
         if (levelLoading) return;
 
-        // Seviye tamamlama koþulu: Sadece silah hedef Z pozisyonuna ulaþtýysa
         if (gun != null && gun.transform.position.z >= targetZ)
         {
-            levelLoading = true; // Yüklemeyi baþlat ve bayraðý ayarla
+            levelLoading = true;
+
+            // Evolution kilidi kontrolü
+            if (EvolutionState.Instance != null)
+            {
+                EvolutionState.Instance.UpdateUnlockProgressOnLevelComplete();
+            }
+
             LoadNextLevel();
         }
     }
 
     void LoadNextLevel()
     {
-        // Sonraki seviyeye geçmeden önce mevcut seviyenin buildIndex'ini kaydet.
         if (GameStateManager.Instance != null)
         {
             int completedLevelIndex = SceneManager.GetActiveScene().buildIndex;
@@ -47,8 +50,6 @@ public class LevelManager : MonoBehaviour
             Debug.LogError("[LevelManager] GameStateManager örneði bulunamadý! Seviye indeksi kaydedilemedi.");
         }
 
-        // Instead of loading next level, go to weapon merge scene
-        // The merge scene will handle returning to the game
         SceneManager.LoadScene("weaponMerge");
     }
 

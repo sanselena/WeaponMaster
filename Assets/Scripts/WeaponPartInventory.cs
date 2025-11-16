@@ -7,7 +7,6 @@ public class WeaponPartInventory : MonoBehaviour
 {
     public static WeaponPartInventory Instance { get; private set; }
 
-    // Mevcut event'ler ve deðiþkenler korunuyor
     public event Action<WeaponPartId> OnEquippedHatChanged;
     public event Action OnInventoryChanged;
 
@@ -42,7 +41,6 @@ public class WeaponPartInventory : MonoBehaviour
         }
     }
 
-    // YENÝ METOT: Kuþanýlmýþ parçanýn stat bonusunu döndürür.
     public float GetEquippedPartBonus()
     {
         if (equippedHat != WeaponPartId.None && partDefMap.TryGetValue(equippedHat, out var definition))
@@ -51,8 +49,6 @@ public class WeaponPartInventory : MonoBehaviour
         }
         return 0f;
     }
-
-    // --- Mevcut Metotlar Deðiþtirilmeden Korunuyor ---
 
     public void AddPart(WeaponPartId partId, int quantity = 1)
     {
@@ -83,19 +79,34 @@ public class WeaponPartInventory : MonoBehaviour
 
     public bool TryEquipHat(WeaponPartId hatId)
     {
-        if (hatId != equippedHat && (hatId == WeaponPartId.None || ownedParts.ContainsKey(hatId)))
+        if (hatId == equippedHat) return false;
+
+        if (hatId == WeaponPartId.None)
         {
-            equippedHat = hatId;
+            equippedHat = WeaponPartId.None;
             OnEquippedHatChanged?.Invoke(equippedHat);
             return true;
         }
-        return false;
+
+        if (!ownedParts.ContainsKey(hatId)) return false;
+
+        // Tier düþüklüðünü engelle
+        if (equippedHat != WeaponPartId.None)
+        {
+            var currentDef = GetPartDefinition(equippedHat);
+            var newDef = GetPartDefinition(hatId);
+            if (currentDef != null && newDef != null && newDef.tier < currentDef.tier)
+            {
+                return false;
+            }
+        }
+
+        equippedHat = hatId;
+        OnEquippedHatChanged?.Invoke(equippedHat);
+        return true;
     }
 
-    public WeaponPartId GetEquippedHat()
-    {
-        return equippedHat;
-    }
+    public WeaponPartId GetEquippedHat() => equippedHat;
 
     public WeaponPartDefinition GetPartDefinition(WeaponPartId partId)
     {
@@ -116,6 +127,14 @@ public class WeaponPartInventory : MonoBehaviour
             var randomPart = tier1Parts[UnityEngine.Random.Range(0, tier1Parts.Count)];
             AddPart(randomPart.partId);
         }
+    }
+
+    // YENÝ: Envanteri komple temizle
+    public void ClearAll()
+    {
+        ownedParts.Clear();
+        TryEquipHat(WeaponPartId.None);
+        OnInventoryChanged?.Invoke();
     }
 }
 
